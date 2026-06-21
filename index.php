@@ -146,7 +146,7 @@ $firstLine = $lines[0];                 // 初期表示の沿線（空港線）
 
     <label>営業時間帯（複数可）</label>
     <!-- name="hours[]" の [] で、チェックした複数の値が配列で届く。
-         将来コンシェルジュの「休日のランチで探したい」の絞り込みに使える。 -->
+         将来、時間帯での絞り込み検索に使える。 -->
     <div class="items">
       <?php foreach ($hours as $h): ?>
         <label><input type="checkbox" name="hours[]" value="<?php echo $h; ?>"> <?php echo $h; ?></label>
